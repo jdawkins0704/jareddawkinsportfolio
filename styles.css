@@ -615,7 +615,6 @@ body::before {
   transform: scale(1.03);
 }
 
-/* scrollbar styling */
 .image-scroll::-webkit-scrollbar {
   height: 6px;
 }
@@ -627,6 +626,48 @@ body::before {
 
 .image-scroll::-webkit-scrollbar-track {
   background: transparent;
+}
+
+/* ---------- Mobile nav fixes ---------- */
+@media (max-width: 720px) {
+  /* Let the header breathe */
+  .nav .nav-inner {
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;            /* key: allows wrapping instead of squishing */
+  }
+
+  /* Brand stays left, nav wraps below if needed */
+  .brand {
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+
+  /* Make the right-side buttons wrap nicely */
+  .nav-links {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: flex-start; /* aligns under the brand */
+    gap: 10px;
+    flex-wrap: wrap;             /* key: prevents overflow/cutoff */
+    margin-left: 0;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    white-space: nowrap;         
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-links a {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 
