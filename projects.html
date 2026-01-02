@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Jared Dawkins</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong>Jared Dawkins</strong>
+          <span>Projects</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./index.html" data-page="index.html">Home</a>
+        <a href="./about.html" data-page="about.html">About</a>
+        <a href="./projects.html" data-page="projects.html">Projects</a>
+        <a href="./resume.html" data-page="resume.html">Resume</a>
+        <a href="./contact.html" data-page="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="proj-hero">
+      <div class="breadcrumb">Projects</div>
+      <h1 class="proj-title">Work that shows how I think, build, and communicate.</h1>
+      <p class="proj-sub">
+        A mix of product design, marketing strategy, and hands on execution. Clean outcomes, strong reasoning, and an inclusive lens.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="panel col-12">
+          <h3>Explore the Work</h3>
+          <p>
+            Every project tells a story. Click a card to dive into the process, challenges, and decisions that shaped each outcome from concept to execution.
+          </p>
+          <div class="cta-row">
+          </div>
+        </div>
+
+        <a class="project-card col-4" href="./projects/marvel-explorer.html">
+          <h4>Marvel Explorer Guide</h4>
+          <p class="mini">Interactive web experience that turns a complex universe into a clear browsing flow.</p>
+          <div class="tags">
+            <span class="tag">Frontend</span><span class="tag">UX</span><span class="tag">IA</span>
+          </div>
+        </a>
+
+        <a class="project-card col-4" href="./projects/cnh-walkaround.html">
+          <h4>CNH Industrial Walkaround Guide</h4>
+          <p class="mini">Dealer enablement guide that translates specs into value and selling confidence.</p>
+          <div class="tags">
+            <span class="tag">PMM</span><span class="tag">Research</span><span class="tag">B2B</span>
+          </div>
+        </a>
+
+        <a class="project-card col-4" href="./projects/homi-mockup.html">
+          <h4>Homi App Mockup</h4>
+          <p class="mini">Team concept that earned first place by pairing clarity with user centered design.</p>
+          <div class="tags">
+            <span class="tag">Product</span><span class="tag">UX</span><span class="tag">Pitch</span>
+          </div>
+        </a>
+
+        <a class="project-card col-6" href="./projects/instaphone.html">
+          <h4>InstaPhone Accessories</h4>
+          <p class="mini">Founder led ecommerce project focused on brand visuals and digital marketing execution.</p>
+          <div class="tags">
+            <span class="tag">Ecommerce</span><span class="tag">Brand</span><span class="tag">Growth</span>
+          </div>
+        </a>
+
+        <a class="project-card col-6" href="./projects/college-chaos.html">
+          <h4>College Chaos</h4>
+          <p class="mini">Card game concept built with product thinking, iteration, and inclusive content design.</p>
+          <div class="tags">
+            <span class="tag">Design</span><span class="tag">Systems</span><span class="tag">Iteration</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <span>© <span id="y"></span> Jared Dawkins</span>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./script.js"></script>
+</body>
+</html>

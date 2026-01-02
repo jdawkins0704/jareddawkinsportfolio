@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Contact | Jared Dawkins</title>
+  <meta name="description" content="Get in touch with Jared Dawkins." >
+  <link rel="stylesheet" href="./styles.css" >
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <strong>Jared Dawkins</strong>
+          <span>Contact</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="proj-hero">
+      <div class="breadcrumb">Contact</div>
+      <h1 class="proj-title">Let’s connect.</h1>
+      <p class="proj-sub">
+        Whether you want to talk about a project, an idea, or a potential collaboration,
+        I’m always open to thoughtful conversations.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+
+        <div class="panel col-7">
+          <h3>Reach out</h3>
+          <p>
+            I’m always open to connecting with people who care about building meaningful,
+            thoughtful work. If you’re reaching out about a role, a project, or just to say hi,
+            I’d love to hear from you.
+          </p>
+
+          <div class="cta-row" style="margin-top:18px;">
+            <a class="btn" href="mailto:d.jared@wustl.edu">Email</a>
+            <a class="btn" href="tel:+12244803070">Phone</a>
+
+            <a class="btn" href="https://www.linkedin.com/in/jared-dawkins-28242b260/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3>What I’m interested in</h3>
+          <ul class="list">
+            <li>Product and product marketing opportunities</li>
+            <li>Design-driven problem solving and strategy</li>
+            <li>Work that centers people, access, and impact</li>
+          </ul>
+        </div>
+
+        <div class="panel col-5">
+          <h3>How I work</h3>
+          <p>
+            I care about clarity, collaboration, and follow-through.
+            I try to be thoughtful in how I communicate and intentional in how I contribute.
+          </p>
+
+          <div class="callout">
+            <strong>What you can expect</strong>
+            <ul class="list" style="margin-top:8px;">
+              <li>Clear communication</li>
+              <li>Respect for time and context</li>
+              <li>Genuine curiosity and follow-through</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <span>© <span id="y"></span> Jared Dawkins</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

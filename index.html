@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Jared Dawkins | Portfolio</title>
+  <meta name="description" content="Jared Dawkins portfolio showcasing product, marketing, and inclusive impact driven work." />
+  <link rel="stylesheet" href="./styles.css" >
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong>Jared Dawkins</strong>
+          <span>Product • Marketing • HCI</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./index.html" data-page="index.html">Home</a>
+        <a href="./about.html" data-page="about.html">About</a>
+        <a href="./projects.html" data-page="projects.html">Projects</a>
+        <a href="./resume.html" data-page="resume.html">Resume</a>
+        <a href="./contact.html" data-page="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-main">
+          <div class="kicker">
+            <span class="pill">Junior at WashU</span>
+            <span class="pill">Student-Athlete</span>
+            <span class="pill">Inclusive Builder</span>
+          </div>
+
+          <h1>I’m driven by the belief that the best products and stories are built when every voice counts.</h1>
+
+          <p class="lead">
+            I work at the intersection of product, marketing, and human centered design. I care about clarity, inclusivity, and outcomes.
+            My goal is to help teams build experiences that feel thoughtful, accessible, and genuinely human.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="./projects.html">Explore projects</a>
+            <a class="btn" href="./about.html">Read my story</a>
+        <a class="btn" href="https://drive.google.com/file/d/1VCcRC-6tAh30G_Vb7mdweckVNBnE32Ih/view?usp=sharing" target="_blank" rel="noopener">Open Resume (PDF)</a>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="kpi-row" aria-label="Highlights">
+            <div class="kpi">
+              <strong>Ideas to Impact</strong>
+              <span>Turning complex ideas into focused and actionable outcomes that resonate.</span>
+            </div>
+            <div class="kpi">
+              <strong>Inclusive lens</strong>
+              <span>Building better solutions by centering diverse perspectives from jump.</span>
+            </div>
+            <div class="kpi">
+              <strong>Storytelling</strong>
+              <span>Communicating ideas in ways that connect, resonate, and drive action.</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card hero-side">
+          <div class="profile">
+            <img class="avatar" src="headshot.jpeg" alt="Headshot of Jared Dawkins" >
+            <div>
+              <h2>Jared Dawkins</h2>
+              <p>Marketing and OSM, minor in HCI</p>
+              <p class="small">Washington University in St. Louis</p>
+            </div>
+          </div>
+
+          <div class="value-row">
+            <span class="value">Innovative</span>
+            <span class="value">Collaborative</span>
+            <span class="value">Inclusive</span>
+            <span class="value">Adaptable</span>
+            <span class="value">Impact-Driven</span>
+            <span class="value">Curious</span>
+            <span class="value">Self-Starter</span>
+            <span class="value">Ambitious</span>
+
+
+
+          </div>
+
+          <div class="panel">
+            <h3 style="margin:0 0 10px;">Featured project</h3>
+            <p style="margin:0 0 12px; color: var(--muted);">
+              Marvel Explorer Guide, a hands-on explorer guide built from ideation through mockup using product thinking and iteration.
+            </p>
+            <a class="btn primary" href="./projects/college-chaos.html">View Project</a>
+            <div class="hr"></div>
+            <div class="cta-row">
+              <a class="btn" href="https://www.linkedin.com/in/jared-dawkins-28242b260/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="mailto:d.jared@wustl.edu">Email</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="panel col-12">
+          <h3>What I do</h3>
+          <p>
+            I translate messy inputs into structured outcomes. That can mean a product concept with clear user flows, a marketing guide that turns specs into value,
+            or a web experience that makes discovery feel effortless.
+          </p>
+          <div class="hr"></div>
+          <div class="grid">
+            <div class="panel col-4">
+              <h3 style="margin:0 0 6px;">Product thinking</h3>
+              <p style="margin:0; color: var(--muted);">Define the problem, prioritize, prototype, iterate.</p>
+            </div>
+            <div class="panel col-4">
+              <h3 style="margin:0 0 6px;">Marketing clarity</h3>
+              <p style="margin:0; color: var(--muted);">Positioning and messaging that feels real and useful.</p>
+            </div>
+            <div class="panel col-4">
+              <h3 style="margin:0 0 6px;">Inclusive design</h3>
+              <p style="margin:0; color: var(--muted);">Build for more people without losing the point.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <span>© <span id="y"></span> Jared Dawkins</span>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Chaos | Jared Dawkins</title>
+  <meta name="description" content="College Chaos is a party card game concept built from ideation through mockup, including prompts, responses, and a full visual direction." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner center-nav">
+      <a class="brand" href="../index.html" aria-label="Back to home">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <strong>Jared Dawkins</strong>
+          <span>College Chaos</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container center-content">
+
+    <section class="proj-hero">
+      <h1 class="proj-title">College Chaos</h1>
+      <p class="proj-sub">
+        A party card game concept I designed from ideation to mockup, built to capture real college moments with bold prompts and chaotic responses.
+      </p>
+
+      <div class="cta-row">
+  <a class="btn" href="../projects.html">Back to projects</a>
+  <a 
+    class="btn btn-outline" 
+    href="https://drive.google.com/file/d/1HGeWwU3qPY_HaQp_WTM-Ue_184Gs3EzC/view?usp=sharing"
+    target="_blank"
+    rel="noopener"
+  >
+    View instructions
+  </a>
+</div>
+
+    </section>
+
+    <section class="section center-section">
+      <div class="panel center-panel">
+
+        <h3>Overview</h3>
+        <p>
+          College Chaos is a card game built around the stuff that makes campus life feel like its own universe.
+          The goal was to create something fast, funny, and instantly playable, without needing a long rulebook or a complicated setup.
+        </p>
+
+        <h3>My Role</h3>
+        <ul class="list">
+          <li>Defined the concept, game vibe, and content categories</li>
+          <li>Wrote prompt and response cards that are specific, relatable, and fun to play in groups</li>
+          <li>Designed the visual card system so the game feels consistent across every category</li>
+          <li>Created mockups that show what the game looks like mid-round</li>
+        </ul>
+
+        <h3>How I approached it</h3>
+        <p>
+          I treated this like a real product build, not just a creative idea. I started by setting constraints.
+          The cards had to be readable in one glance, the tone had to feel bold without being forced, and the categories needed to cover different sides of college life so the game stays fresh.
+          From there, I built a visual system that could scale as the deck grows.
+        </p>
+
+        <h3>Outcome</h3>
+        <ul class="list">
+          <li>Ended with a cohesive card design and content system that can scale to a full deck</li>
+          <li>Built a visual direction that feels recognizable, playful, and on brand</li>
+          <li>Practiced turning an idea into a tangible, testable experience from start to finish</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="section center-section">
+      <div class="panel center-panel">
+
+        <h3>Card table gallery</h3>
+        <p style="margin-top: 6px;">
+          Scroll through the mockups like you’re looking at a real round in progress.
+        </p>
+
+        <div class="card-table-wrap">
+          <div class="card-table" id="cardTable" aria-label="Scrollable card gallery">
+            <img src="../chaos-1.png" alt="College Chaos card mockup 1" >
+            <img src="../chaos-2.png" alt="College Chaos card mockup 2" >
+            <img src="../chaos-3.png" alt="College Chaos card mockup 3" >
+            <img src="../chaos-4.png" alt="College Chaos card mockup 4" >
+            <img src="../chaos-5.png" alt="College Chaos card mockup 5" >
+            <img src="../chaos-6.png" alt="College Chaos card mockup 6" >
+            <img src="../chaos-7.png" alt="College Chaos card mockup 7" >
+
+          </div>
+        </div>
+
+        <p class="card-hint">
+        </p>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <span>© <span id="y"></span> Jared Dawkins</span>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    const slider = document.getElementById("cardTable");
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    slider.addEventListener("mousedown", (e) => {
+      isDown = true;
+      slider.classList.add("dragging");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+      isDown = false;
+      slider.classList.remove("dragging");
+    });
+
+    slider.addEventListener("mouseup", () => {
+      isDown = false;
+      slider.classList.remove("dragging");
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 1.4;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+
+  <style>
+    .card-table-wrap {
+      margin-top: 16px;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(37, 99, 235, 0.16);
+      background:
+        radial-gradient(1200px 500px at 20% 20%, rgba(124, 58, 237, 0.18), transparent 55%),
+        radial-gradient(900px 600px at 80% 30%, rgba(59, 130, 246, 0.16), transparent 60%),
+        linear-gradient(180deg, rgba(15, 23, 42, 0.94), rgba(2, 6, 23, 0.94));
+      box-shadow: 0 18px 55px rgba(2, 6, 23, 0.35);
+    }
+
+    .card-table {
+      display: flex;
+      gap: 18px;
+      padding: 22px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      cursor: grab;
+    }
+
+    .card-table.dragging {
+      cursor: grabbing;
+    }
+
+    .card-table img {
+        flex: 0 0 auto;
+        width: 460px;
+        max-width: 80vw;
+        height: auto;
+        border-radius: 16px;
+        scroll-snap-align: start;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+        background: rgba(255, 255, 255, 0.03);
+        transition: transform 0.18s ease;
+        }
+
+
+    .card-table img:hover {
+      transform: scale(1.01);
+    }
+
+    .card-hint {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: rgba(55, 65, 81, 0.9);
+    }
+
+    .card-table::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .card-table::-webkit-scrollbar-thumb {
+      background: rgba(59, 130, 246, 0.28);
+      border-radius: 999px;
+    }
+
+    .card-table::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    @media (max-width: 640px) {
+      .card-table {
+        padding: 16px;
+      }
+      .card-table img {
+        width: 420px;
+      }
+    }
+  </style>
+
+</body>
+</html>
+
+

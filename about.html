@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Jared Dawkins</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong>Jared Dawkins</strong>
+          <span>About</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./index.html" data-page="index.html">Home</a>
+        <a href="./about.html" data-page="about.html">About</a>
+        <a href="./projects.html" data-page="projects.html">Projects</a>
+        <a href="./resume.html" data-page="resume.html">Resume</a>
+        <a href="./contact.html" data-page="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="proj-hero">
+      <div class="breadcrumb">About</div>
+      <h1 class="proj-title">My work is values led, but it is also built to perform.</h1>
+      <p class="proj-sub">
+        I’m a junior student athlete at Washington University in St. Louis studying Marketing and Organization and Strategic Management, with a minor in Human Computer Interaction.
+        I care about building experiences that are inclusive, clear, and genuinely useful.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="panel col-7">
+          <h3>My why</h3>
+          <p>
+            My interest in product and marketing comes from one core belief.
+            The choices we make in design and storytelling shape who feels included and who gets left out.
+          </p>
+          <p>
+          I want a career where I can combine strategy, creativity, and structured thinking to build work that actually opens doors for more people. I care deeply about access and representation, not as a buzzword, but because inclusive thinking leads to stronger ideas, better decisions, and more meaningful impact.
+          </p>
+
+          <div class="callout">
+            <strong>What matters to me</strong>
+            <p style="margin:8px 0 0; color: var(--muted);">
+              Building with intent. Communicating with clarity. Making sure more people are considered in the process.
+            </p>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3>How I work</h3>
+          <ul class="list">
+            <li>I start with the user and the real constraint.</li>
+            <li>I organize the problem into decisions and tradeoffs.</li>
+            <li>I ship something clear, then iterate based on feedback.</li>
+          </ul>
+        </div>
+
+        <div class="panel col-5">
+          <h3>At a glance</h3>
+          <div class="kpi-row">
+            <div class="kpi">
+              <strong>Focus</strong>
+              <span>Product and marketing roles</span>
+            </div>
+            <div class="kpi">
+              <strong>Edge</strong>
+              <span>Inclusive thinking as structure</span>
+            </div>
+            <div class="kpi">
+              <strong>Style</strong>
+              <span>Bold ideas, clean execution</span>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3>What I am building toward</h3>
+          <p style="margin:0; color: var(--muted);">
+            Roles where I can support product decisions, shape messaging, and contribute to experiences that feel accessible and high quality.
+          </p>
+
+          <div class="cta-row" style="margin-top:14px;">
+            <a class="btn primary" href="./projects.html">See my work</a>
+            <a class="btn" href="./contact.html">Reach out</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <span>© <span id="y"></span> Jared Dawkins</span>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./script.js"></script>
+</body>
+</html>
