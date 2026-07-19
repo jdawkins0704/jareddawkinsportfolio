@@ -25,18 +25,18 @@
   <main class="container center-content">
 
     <section class="proj-hero">
-      <h1 class="proj-title">Marvel Explorer Guide</h1>
-      <p class="proj-sub">
-        An interactive web experience designed to make exploring the Marvel universe intuitive,
-        structured, and enjoyable.
-      </p>
+      <h1 class="proj-title">MCU Explorer</h1>
+     <p class="proj-sub">
+  An API-powered React application that makes the Marvel Cinematic Universe
+  easier to search, filter, and explore.
+</p>
 
       <div class="cta-row">
   <a class="btn" href="../projects.html">Back to projects</a>
 
   <a 
     class="btn btn-outline"
-    href="https://washu-cse2004-fl2025-1.github.io/final-project-jdawkins0704/"
+href="https://final-project-jdawkins0704-main.vercel.app"
     target="_blank"
     rel="noopener"
   >
@@ -50,37 +50,47 @@
       <div class="panel center-panel">
 
         <h3>Overview</h3>
-        <p>
-          The Marvel Explorer Guide is a web-based experience designed to help users navigate the Marvel universe
-          in a way that feels clear rather than overwhelming. The goal was to take a dense collection of
-          characters and stories and make them approachable through structure and thoughtful design.
-        </p>
+<p>
+  MCU Explorer is an interactive web application that helps users navigate
+  Marvel Cinematic Universe titles without feeling overwhelmed by the size
+  of the franchise. Users can search the catalog, filter titles by MCU phase,
+  browse releases chronologically, view title details, and save favorites.
+</p>
 
-        <h3>My role</h3>
-        <ul class="list">
-          <li>Designed the overall user experience and navigation flow</li>
-          <li>Built the interface using HTML, CSS, and JavaScript</li>
-          <li>Focused on hierarchy, spacing, and clarity</li>
-          <li>Iterated based on usability and readability</li>
-        </ul>
+<h3>My role</h3>
+<ul class="list">
+  <li>Designed the application’s information architecture and navigation</li>
+  <li>Built the interface with React, HTML, and CSS</li>
+  <li>Integrated live movie data from the TMDB API</li>
+  <li>Created search, phase filtering, timeline, and favorites functionality</li>
+  <li>Deployed the frontend and secure serverless API through Vercel</li>
+</ul>
 
-        <h3>Process & thinking</h3>
-        <p>
-          I approached this project as a product problem rather than a purely technical one. My goal was to reduce
-          friction and make exploration feel natural, even for users unfamiliar with the Marvel universe.
-        </p>
+<h3>Process &amp; thinking</h3>
+<p>
+  I approached MCU Explorer as both a product and technical problem. The MCU
+  contains an expanding catalog of interconnected titles, so I organized the
+  experience around the ways users naturally explore it: searching for a
+  specific title, browsing by phase, following release order, and saving
+  favorites.
+</p>
 
-        <p>
-          By prioritizing structure and intentional layout decisions, the experience encourages exploration
-          without overwhelming the user.
-        </p>
+<p>
+  When the original third-party MCU API became unavailable, I diagnosed the
+  failure and rebuilt the data layer using TMDB. I routed requests through a
+  Vercel serverless function, protected the access token with an environment
+  variable, transformed the response into the structure expected by the
+  interface, and cached results for faster loading.
+</p>
 
-        <h3>Outcome</h3>
-        <ul class="list">
-          <li>A clean, intuitive interface that supports discovery</li>
-          <li>A responsive layout that works across devices</li>
-          <li>A clearer understanding of information architecture and UX thinking</li>
-        </ul>
+<h3>Outcome</h3>
+<ul class="list">
+  <li>Live MCU information and poster artwork retrieved through TMDB</li>
+  <li>Searchable catalog organized across six MCU phases</li>
+  <li>Chronological timeline and persistent favorites</li>
+  <li>A responsive interface supporting desktop and mobile use</li>
+  <li>A secure API integration that keeps credentials out of the browser</li>
+</ul>
 
       </div>
     </section>
